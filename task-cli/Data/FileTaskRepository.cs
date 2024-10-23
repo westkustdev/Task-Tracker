@@ -11,7 +11,7 @@ public class FileTaskRepository
 
         var id = tasks.Any() ? tasks.Max(t => t.Id) + 1 : 1;
 
-        tasks.Add(new TodoTask(id, taskDescription, "Pending", DateTime.Now, DateTime.Now));
+        tasks.Add(new TodoTask(id, taskDescription, "todo", DateTime.Now, DateTime.Now));
 
         SaveAll(tasks);
 
